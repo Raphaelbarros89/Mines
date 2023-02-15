@@ -20,7 +20,7 @@ export default props => {
     }
 
     return (
-        <View styles={styleField}>
+        <View style={styleField}>
             {!mined && opened && nearMines > 0 ?
                 <Text style={[styles.label, { color: color}]}>
                     {nearMines}</Text> : false }
