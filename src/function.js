@@ -18,6 +18,7 @@ const spreadMines = (board, minesAmount) => {
     const rows = board.length
     const columns = board[0].length
     let minesPlanted = 0
+    
     while (minesPlanted < minesAmount) {
         const rowSel = parseInt(Math.random() * rows, 10)
         const columnSel = parseInt(Math.random() * columns, 10)
@@ -44,7 +45,7 @@ const cloneBoard = board => {
 }
 
 const getNeighbors = (board, row, column) => {
-    const neighbors =[]
+    const neighbors = []
     const rows = [row - 1, row, row + 1]
     const columns = [column - 1, column, column + 1]
     rows.forEach(r => {
