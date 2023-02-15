@@ -8,7 +8,7 @@ const createBoard = (rows, columns) => {
                 flagged: false,
                 mined: false,
                 exploed: false,
-                nearMines: 0
+                nearMines: 0,
             }
         })
     })
