@@ -24,6 +24,7 @@ export default props => {
             {!mined && opened && nearMines > 0 ?
                 <Text style={[styles.label, { color: color}]}>
                     {nearMines}</Text> : false }
+                {mined && opened ? <Mine /> : false }
                     
         </View>
     )
